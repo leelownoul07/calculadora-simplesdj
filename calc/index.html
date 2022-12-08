@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script type="text/javascript" src="./script.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Calculadora JS</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="valor">Valor 1</label>
+                    <input type="number" placeholder="Digite o valor 1" id="valor1" class="form-control">                    
+                </div>
+                <div class="col-md-4">
+                    <label for="valor">Valor 2</label>
+                    <input type="number" placeholder="Digite o valor 2" id="valor2" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="total">Total</label>
+                    <input type="number" placeholder="Total" id="total" class="form-control">
+                </div>
+            </div>
+
+        <br />
+
+            <div class="row">
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-outline-primary" onclick="somar('+')">+</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-outline-primary" onclick="subtrair('-')">-</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-outline-primary" onclick="multiplicar('/')">/</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-outline-primary" onclick="dividir('*')">*</button>
+                </div>
+            </div>
+
+        <br />
+        <button onclick="Resultado()" id="btnResultado" class="btn btn-dark">Resultado</button>            
+        </form>
+    </div>
+</body>
+</html>
